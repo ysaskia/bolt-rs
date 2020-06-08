@@ -1,0 +1,13 @@
+[package]
+name = "packstream_proc"
+version = "0.1.0"
+authors = ["Yoann Sitbon <yoann@askia.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["proc-macro"]
+
+[dependencies]
+packstream_core = { path = "../packstream_core" }
+syn = { version = "1.0.8", features = ["full"] }
+quote = "1.0.2"

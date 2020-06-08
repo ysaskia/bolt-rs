@@ -1,0 +1,5 @@
+[package]
+name = "packstream_core"
+version = "0.1.0"
+authors = ["Yoann Sitbon <yoann@askia.com>"]
+edition = "2018"
