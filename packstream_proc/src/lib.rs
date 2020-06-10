@@ -15,7 +15,7 @@ pub fn bolt_packstream(sign: TokenStream, input: TokenStream) -> TokenStream {
     let input: ItemStruct = parse_macro_input!(input as ItemStruct);
     let sign: LitInt = parse_macro_input!(sign as LitInt);
     
-    // TODO returns a tuple here only do one iteration
+    // TODO returns a tuple here only. Should do one iteration only
     let pack_calls = input.fields.iter().map(pack_call).collect::<Vec<_>>();
     let field_names = input.fields.iter().map(field_name).collect::<Vec<_>>();
     let field_values = input.fields.iter().map(field_value).collect::<Vec<_>>();
