@@ -1,4 +1,4 @@
-This package adds procedural macro `bolt_packstream` which impl `Packer` and 
+This package adds procedural macro `bolt_packstream` (will be renamed `bolt_struct`) which impl `Packer` and 
 `Unpacker` for a given struct.
 
 Here is how the native Neo4j `Node` type is implemented in `packstream_core`:
